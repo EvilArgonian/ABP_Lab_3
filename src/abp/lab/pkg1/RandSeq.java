@@ -16,7 +16,7 @@ public class RandSeq {
     private static char[] aminoAlphabet = new char[] {'A', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T', 'V', 'W', 'Y'};
     
     public static String generateRandomSequence(int length) throws Exception { //Default, even spread of nucleotides
-        return generateRandomSequence(aminoAlphabet, new float[] {.25f, .25f, .25f, .25f}, length);
+        return generateRandomSequence(nucAlphabet, new float[] {.25f, .25f, .25f, .25f}, length);
     }
     
     public static String generateRandomSequence(float[] probWeight, int length) throws Exception {
